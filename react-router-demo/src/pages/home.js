@@ -7,10 +7,10 @@ class Home extends Component {
     render() { 
         return ( <h2>home 页面</h2>  );
     }
-    // componentDidMount(){
-    //     this.setState({id:this.props.match.params.id})
-    //     console.log(this.props.match)
-    // }
+    componentDidMount(){
+        // this.setState({id:this.props.match.params.id})
+        console.log('homezujian')
+    }
 }
  
 export default Home;
