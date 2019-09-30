@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 import Index from './pages/index'
 import List from './pages/list'
 import Home from './pages/home'
+import Video from './pages/video'
 function AppRouter() {
     return (
         <Fragment>
@@ -11,6 +12,7 @@ function AppRouter() {
                     <li>
                         <Link to="/">首页</Link>
                         <Link to="/list/123">列表页面</Link>
+                        <Link to="/video/">video</Link>
                     </li>
                 </ul>
 
@@ -19,6 +21,7 @@ function AppRouter() {
                 <Route path="/list/:id" component={List} />
                 
                 <Route path="/home/" component={Home}/>
+                <Route path="/video/" component={Video}/>
             </Router>
            
         </Fragment>

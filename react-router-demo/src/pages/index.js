@@ -4,10 +4,10 @@ class Index extends Component {
     constructor(props) {
         super(props);
         this.state = {  }
-        this.props.history.push("/home/");  
+        // this.props.history.push("/home/");  
     }
     render() { 
-        return <div></div>
+        return <Redirect to="/home/"/>
     }
 }
  
